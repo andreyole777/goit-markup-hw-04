@@ -40,7 +40,7 @@ img {
 }
 
 .item {
-  margin-right: var(--card-set-gap);
+ margin-right: var(--card-set-gap);
 }
 
 .link {
@@ -131,16 +131,23 @@ img {
 /*Hero*/
 .hero-section {
   padding: 200px 0;
-
   text-align: center;
   background-color: #2f303a;
+}
+
+.overlay {
+  max-width: 1600px;
+  min-height: 600px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, .4), rgba(47, 48, 58, .4)), url(../images/main/hero-bgi.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .hero-title {
   margin-bottom: 30px;
 
   color: var(--white-text-color);
-  background-color: #2f303a;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -372,7 +379,7 @@ img {
 }
 
 .portfolio-item-description {
-  padding: 20px 0;
+  padding: 20px 24px;
 }
 .portfolio-title {
   margin-bottom: 4px;
