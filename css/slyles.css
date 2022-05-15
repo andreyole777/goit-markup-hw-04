@@ -9,6 +9,9 @@
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
 
+  /*icons*/
+  --icon-color: #afb1b8;
+
   /*grid items*/
   --items: 1;
   --indent: 30px;
@@ -116,15 +119,22 @@ img {
 
 .contacts {
   display: flex;
+  align-items: baseline;
   margin-left: auto;
   gap: 50px;
 }
 
 .contact-link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 32px 0 31px;
+  gap: 10px;
 
   color: var(--primary-text-color);
+}
+
+.contacts-icon {
+  fill: currentColor;
 }
 
 /*Hero*/
@@ -208,6 +218,18 @@ img {
   --items: 4;
 }
 
+.feature-icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+
+  background-color: var(--secondary-bg-color);
+  border-radius: 4px;
+}
+
 .feature-title {
   margin-bottom: 10px;
 
@@ -253,12 +275,9 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-item:nth-child(4n) {
-  margin-right: 0;
-}
-
 .team-item-description {
-  padding: 30px 0;
+  padding-top: 30px;
+  margin-bottom: 16px;
 }
 
 .teammate-title {
@@ -279,11 +298,76 @@ img {
   letter-spacing: 0.03em;
 }
 
+.socials-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+  gap: 10px;
+}
+
+.socials-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  color: var(--icon-color);
+}
+
+.socials-link:hover,
+.socials-link:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+
+.social-icon {
+  fill: currentColor;
+}
+
+/*Clients section*/
+
+/*.client-list {
+  --indent: 40px;
+}*/
+
+.client-item {
+  --items: 6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+
+  color: var(--icon-color);
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+}
+
+.client-item:hover,
+.client-item:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
+.client-icon {
+  fill: currentColor;
+}
+
 /*Footer*/
 .footer-section {
   padding: 60px 0;
   background-color: #2f303a;
 }
+
+/*.footer-address {
+}
+
+.footer-socials {
+}*/
 
 .address-section {
   margin-top: 20px;
@@ -321,6 +405,15 @@ img {
 .address-link:hover,
 .address-link:focus {
   color: var(--accent-color);
+}
+
+.socials-title {
+  color: var(--white-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
 /*Portfolio page*/
