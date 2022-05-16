@@ -276,8 +276,7 @@ img {
 }
 
 .team-item-description {
-  padding-top: 30px;
-  margin-bottom: 16px;
+  padding: 30px 0;
 }
 
 .teammate-title {
@@ -292,6 +291,8 @@ img {
 }
 
 .teammate-text {
+  margin-bottom: 16px;
+
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -302,7 +303,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 30px;
   gap: 10px;
 }
 
@@ -363,11 +363,14 @@ img {
   background-color: #2f303a;
 }
 
-/*.footer-address {
+.footer-container {
+  display: flex;
+  gap: 70px;
 }
 
-.footer-socials {
-}*/
+.footer-address {
+  width: 231px;
+}
 
 .address-section {
   margin-top: 20px;
@@ -408,12 +411,28 @@ img {
 }
 
 .socials-title {
+  margin: 12px 0 20px;
+
   color: var(--white-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.footer-socials-list {
+  padding-bottom: 0;
+}
+
+.footer-social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white-text-color);
+}
+
+.footer-social-link:hover,
+.footer-social-link:focus {
+  background-color: var(--accent-color);
 }
 
 /*Portfolio page*/
